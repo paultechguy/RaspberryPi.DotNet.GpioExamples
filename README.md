@@ -2,7 +2,7 @@ GPIO .NET Examples
 Copyright (c) 2017 Paul Carver
 
 # Examples Introduction
-The GPIO .NET Examples repository was created to help developers learn how to develop C# applications on the Raspberry Pi, quickly and easily.  The development platform uses Microsoft Visual Studio for development and executes using [Mono](http://www.mono-project.com/) on a Raspberry Pi running Linux. The repository contains several examples which come packaged with:
+The GPIO .NET Examples repository was created to help developers learn how to develop C# applications on the Raspberry Pi, quickly and easily.  The main emphasis of the repository is to help program the GPIO pins on the Raspberry Pi.  The development platform uses Microsoft Visual Studio for development and executes using [Mono](http://www.mono-project.com/) on a Raspberry Pi running Linux. The repository contains several examples which come packaged with:
 - C# Source Code
 - [Fritzing](http://fritzing.org) project file
 - GPIO pinout connection images
@@ -17,9 +17,9 @@ The examples included with this repository are:
 * Three color RGB LED
 * Magnetic buzzer / single color LED combo
 * Photocell (light detection)
-* DHT11 Temperature Sensor
-* TMP102 Temperature Sensor
-* PWM Single color LED (pulse width modulation)
+* DHT11 temperature sensor
+* TMP102 temperature sensor
+* PWM single color LED (pulse width modulation)
 * PWM three color LED (pulse width modulation)
 
 The GPIO .NET Examples source code leverages the publicly available [Raspberry# IO](https://github.com/raspberry-sharp/raspberry-sharp-io) respository.
