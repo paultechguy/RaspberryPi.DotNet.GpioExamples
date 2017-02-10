@@ -50,5 +50,8 @@ Once your breadboard is set up, you can invoke an example executable using [Mono
 **Breadboard Setup**  
 You can view helpful images to assist in setting up your breadboard for each GPIO example; the images are located in the *Content* directory for each example.There is also a [Fritzing](http://fritzing.org/) project file. Be sure to configure your breadboard to use the same GPIO header pins so that each example program will work correctly.
 
+# Additional Learning Resources
+The [RaspberryPi.DotNet.GpioWeb](https://bitbucket.org/PaulTechGuy/raspberrypi.dotnet.gpioweb) repository contains a great RESTful web service host that you can extend to control components that are attached to the GPIO pins of the Raspberry Pi.  The architecture is *pluggable* so you can write custom plugins to extend the web service functionality.
+
 # Contact
 You can contact us at <raspberrypi@paultechguy.com>.
