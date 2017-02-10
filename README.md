@@ -2,7 +2,7 @@ GPIO .NET Examples
 Copyright (c) 2017 Paul Carver
 
 # Examples Introduction
-The GPIO .NET Examples repository was created to help developers learn how to develop C# applications on the Raspberry Pi, quickly and easily.  The main emphasis of the repository is to help program the GPIO pins on the Raspberry Pi.  The development platform uses Microsoft Visual Studio for development and executes using [Mono](http://www.mono-project.com/) on a Raspberry Pi running Linux. The repository contains several examples which come packaged with:
+The GPIO .NET Examples repository was created to help developers learn how to develop C# applications on the Raspberry Pi, quickly and easily, in order to control the GPIO pins on the Raspberry Pi. The development platform uses Microsoft Visual Studio for development and executes using [Mono](http://www.mono-project.com/) on a Raspberry Pi running Linux. The repository contains several examples which come packaged with:
 - C# Source Code
 - [Fritzing](http://fritzing.org) project file
 - GPIO pinout connection images
