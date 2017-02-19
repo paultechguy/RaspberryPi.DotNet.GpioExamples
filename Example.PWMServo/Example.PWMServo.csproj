@@ -75,6 +75,7 @@
     <Content Include="Content\IMG_4782.jpg" />
     <Content Include="Content\IMG_4784.jpg" />
     <Content Include="Content\PWMServo.jpg" />
+    <Content Include="Content\Tower Pro SG90 Servo Wire Colors.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

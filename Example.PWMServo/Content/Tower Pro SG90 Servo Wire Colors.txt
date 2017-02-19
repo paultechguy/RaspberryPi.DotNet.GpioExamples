@@ -1,0 +1,3 @@
+﻿Red = Positive
+Brown = Ground
+Orange = PWM Signal
