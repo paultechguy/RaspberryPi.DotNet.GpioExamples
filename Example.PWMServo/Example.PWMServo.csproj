@@ -67,6 +67,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Content\PWMServo.fzz" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Content\IMG_4780.jpg" />
+    <Content Include="Content\IMG_4782.jpg" />
+    <Content Include="Content\IMG_4784.jpg" />
+    <Content Include="Content\PWMServo.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
