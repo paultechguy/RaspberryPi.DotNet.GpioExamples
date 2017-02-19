@@ -34,6 +34,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Common.Logging">
+      <HintPath>..\Raspberry.Sharp.IO\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Core">
+      <HintPath>..\Raspberry.Sharp.IO\Common.Logging.Core.dll</HintPath>
+    </Reference>
     <Reference Include="Raspberry.IO, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Raspberry.Sharp.IO\Raspberry.IO.dll</HintPath>

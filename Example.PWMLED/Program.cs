@@ -82,7 +82,7 @@ namespace Example.PWMLED
 			// PMW ticks range from 0 to 4095
 			int increment = 100;
 			int startCycleTick = 0;
-			device.SetPwm(PwmChannel.C1, 0, 0);
+			device.SetPwm(channel, 0, 0);
 			while (!cancelToken.IsCancellationRequested)
 			{
 				// up we go

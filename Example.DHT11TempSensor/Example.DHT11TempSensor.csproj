@@ -34,6 +34,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Common.Logging">
+      <HintPath>..\Raspberry.Sharp.IO\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Core">
+      <HintPath>..\Raspberry.Sharp.IO\Common.Logging.Core.dll</HintPath>
+    </Reference>
     <Reference Include="Raspberry.IO, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Raspberry.Sharp.IO\Raspberry.IO.dll</HintPath>
@@ -82,6 +88,9 @@
     <Content Include="Content\DHT11TempSensor.jpg" />
     <Content Include="Content\IMG_2259.JPG" />
     <Content Include="Content\IMG_2260.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
