@@ -19,8 +19,9 @@ The examples included with this repository are:
 * Photocell (light detection)
 * DHT11 temperature sensor
 * TMP102 temperature sensor
-* PWM single color LED (pulse width modulation)
-* PWM three color LED (pulse width modulation)
+* i2C PWM single color LED (pulse width modulation)
+* i2C PWM three color LED (pulse width modulation)
+* i2C PWM servo
 
 The GPIO .NET Examples source code leverages the publicly available [Raspberry# IO](https://github.com/raspberry-sharp/raspberry-sharp-io) respository.
 
@@ -37,6 +38,11 @@ The respository has been tested with:
 
 # Building Examples
 The GPIO DotNet Examples solution, RaspberryPi.GpioExamples.sln, can be built on a Windows computer using Visual Studio 2015.  You must have .NET 4.6.2+ installed.  After building the solution, copy the output for a specific example to a directory of your choosing on the Raspberry Pi; the copy should include all files and sub-directories in the example Release or Debug directory.
+
+You might consider making sure you all the latest updates for your Raspberry Pi and the Mono environment before building and executing the examples:
+
+	sudo apt-get update
+	sudo apt-get upgrade
 
 # Executing Examples
 MANAGING THE GPIO HEADER AND CONNECTING ELECTRONIC COMPONENTS TO THE PI REQUIRES GREAT CARE. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS OF RASPBERRYPI.DOTNET.GPIOEXAMPLES BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
