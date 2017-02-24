@@ -29,7 +29,7 @@ The GPIO .NET Examples source code leverages the publicly available [Raspberry# 
 The respository has been tested with:
 
 * Debian 8.0 (jessie)
-* Mono 4.6.2*
+* [Mono](http://www.mono-project.com/) 4.6.2*
 * .NET 4.6.2
 * Raspberry Pi 2 B hardware board
 * [Raspberry# IO](https://github.com/raspberry-sharp/raspberry-sharp-io) as of February 1, 2017
