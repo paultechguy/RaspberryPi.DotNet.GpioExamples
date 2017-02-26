@@ -35,8 +35,8 @@ namespace Example.PWMServo
 		// to adjust based on other servos.  Hint: Use !ddd to input rotation which will
 		// help you input raw cycle values to determine the min/max for your servo.
 		//
-		private const int _servoMin = 190; // min pulse length out of 4096
-		private const int _servoMax = 680; // max pulse length out of 4096
+		private int _servoMin = 190; // min pulse length out of 4096
+		private int _servoMax = 680; // max pulse length out of 4096
 
 		static void Main(string[] args)
 		{
@@ -47,9 +47,24 @@ namespace Example.PWMServo
 		{
 			using (var driver = new I2cDriver(ProcessorPin.Pin2, ProcessorPin.Pin3))
 			{
-				// which pwm channel
-				PwmChannel channel = PwmChannel.C0;
+				// which pwm channel; allow override from args[0] as 0..n
+				int c = 0;
+				if (args.Length > 0)
+				{
+					Int32.TryParse(args[0], out c);
+				}
+				PwmChannel channel = (PwmChannel)c;
 				Console.WriteLine($"Using PCA9685 channel {channel.ToString()}");
+
+				// allow override of min/max cycle
+				if (args.Length > 1)
+				{
+					Int32.TryParse(args[1], out _servoMin);
+				}
+				if (args.Length > 2)
+				{
+					Int32.TryParse(args[2], out _servoMax);
+				}
 
 				int i2cAddress = 0x40;
 				Console.WriteLine($"Using i2C address 0x{i2cAddress:x}");
@@ -76,7 +91,7 @@ namespace Example.PWMServo
 					int cycle;
 					if (TryParse(input, out cycle))
 					{
-						Console.WriteLine($"Setting PWM to {cycle}");
+						Console.WriteLine($"Setting PWM channel {channel.ToString()} to {cycle}");
 						device.SetPwm(channel, 0, cycle);
 					}
 				} while (input != string.Empty);
