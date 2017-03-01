@@ -78,6 +78,7 @@ namespace Example.PWMServo
 				var pwmFrequency = Frequency.FromHertz(freq);
 				device.SetPwmUpdateRate(pwmFrequency);
 
+				Console.WriteLine("* * * When entering values, prefix the input with \"!\" to specify a raw pulse value rather than a degree value (e.g. !680). * * *");
 
 				Console.WriteLine("\nPress any key to exit...\n");
 
