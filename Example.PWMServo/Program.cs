@@ -118,7 +118,7 @@ namespace Example.PWMServo
 			}
 
 			bool status = cycle >= 0;
-			if (!status)
+			if (!status && s.Length > 0)
 			{
 				Console.Error.WriteLine("%Invalid input");
 			}
