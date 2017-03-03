@@ -38,6 +38,8 @@ namespace Example.TMP102TempSensor
 			// see the end of this file more information on reading the TMP102
 			//
 
+			Console.WriteLine("Press any key to exit...\n");
+
 			int seconds = 3;
 			Console.WriteLine("TMP102 (Model: SEN-11931): Measure temperature");
 			Console.WriteLine($"Measure: I2C every {seconds} second(s)");
